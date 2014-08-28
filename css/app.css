@@ -1,9 +1,25 @@
-#mainContainer {
+#mainContainer, #mainRow {
 	position: absolute;
 	top: 60px;
-	bottom: 0px;
+	bottom: 10px;
 	left: 0px;
 	right: 0px;
 }
 
-#map { height: 80%; background-color: "#00FF00"; }
+.full-height {
+	position: relative;
+	height: 100%;
+}
+
+#map {
+	height: 100%;
+}
+
+#sidebar {
+	height: 100%;
+}
+
+#sidebarContent {
+	overflow-y: auto;
+	height: 85%;
+}
