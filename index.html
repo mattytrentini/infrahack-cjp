@@ -6,8 +6,11 @@
 		<link rel="stylesheet" href="css/app.css" />
 		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
 		<script type="text/javascript" src="js/OpenLayers.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
+		<script id="SearchOptionsTemplate" type="template">
+		</script>
 	</head>
 	<body>
 		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -37,19 +40,49 @@
 		    			Home
 		    		</div>
 		    		<div id="sidebarContent" class="panel-body">
-		    			<p>
-		    			Lorem ipsum dolor sit amet, alienum invidunt te vix, ius eu debet commune detraxit. Te pro quod probo oporteat. Vix eu paulo facete, at viris necessitatibus pri. Eos at dicant ponderum, munere voluptua placerat ei ius. Est quod iudicabit et, cum et reque nostrud delectus, primis nemore an nec. Dicit legimus conclusionemque an quo.
-		    			</p>
-		    			<p>
-An pri graece aperiri constituam. Sint veri volutpat his ea, in usu nostrum honestatis, has an etiam veniam omittantur. Dolorum reformidans an qui. Ne vim nibh veri comprehensam, ea mea quando fabulas fuisset, cum cetero maiorum democritum ut.
-						</p>
-						<p>
-Vel consulatu mnesarchum at, mei eu accusam oportere. Etiam mundi philosophia pri no, clita graece ad eos, eam te porro graece argumentum. Ludus feugait vim id, in vix atqui munere. Sea no sint partiendo. Aperiri repudiare ad eum, nec ancillae pericula scriptorem an, augue facilisis sed an. Vix no ancillae postulant, diam tincidunt conceptam no qui, vis diam nostrud in.
-						</p>
-						<p>
-Ius solum detracto ex, postulant definitionem necessitatibus pri cu, cum cetero aperiri at. Ut ubique aliquam eleifend mea, fugit explicari ad eos. Partem noster temporibus ne cum. His ubique detraxit convenire ne.
-						</p>
+		    			<form role="form">
+		    				<div class="form-group">
+		    					<label for="startAddress">Start</label>
+		    					<input type="text" class="form-control input-sm" id="startAddress" placeholder="Start Address" />
+		    				</div>
+		    				<div class="form-group">
+		    					<label for="endAddress">End</label>
+		    					<input type="text" class="form-control input-sm" id="endAddress" placeholder="End Address" />
+		    				</div>
+		    				<div class="form-group">
+		    					<label for="rideSpeed">Ride Speed</label>
+		    					<select class="form-control input-sm" id="rideSpeed">
+		    					</select>
+		    				</div>
+		    				<div class="form-controls">
+		    					<a class="btn btn-primary">Search</a>
+		    				</div>
+		    			</form>
 		    		</div>
+	    		</div>
+	    		<div class="panel panel-default">
+	    			<div class="panel-heading">
+	    				Journey Options
+	    			</div>
+	    			<div class="panel-body">
+	    				<div class="btn-toolbar">
+	    					<a class="btn btn-default">Shortest Route</a>
+	    					<a class="btn btn-default">Bike Paths</a>
+	    					<a class="btn btn-default">Roads</a>
+	    				</div>
+	    				<div class="btn-toolbar">
+	    					<a class="btn btn-default">Safest Route</a>
+	    					<a class="btn btn-default">Bike Lanes</a>
+	    					<a class="btn btn-default">Trains</a>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="panel panel-default">
+	    			<div class="panel-heading">
+	    				More Options
+	    			</div>
+	    			<div class="panel-body">
+	    			</div>
 	    		</div>
 	    	</div>
 	    	<div id="map" class="col-md-8">
