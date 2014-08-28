@@ -1,0 +1,9 @@
+#mainContainer {
+	position: absolute;
+	top: 60px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+#map { height: 80%; background-color: "#00FF00"; }
