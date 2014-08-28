@@ -17,9 +17,5 @@
 
 #sidebar {
 	height: 100%;
-}
-
-#sidebarContent {
 	overflow-y: auto;
-	height: 85%;
 }

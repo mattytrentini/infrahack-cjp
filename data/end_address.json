@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "Name": "6 Fraser St, Richmond VIC 3121, Australia", "Descriptio": null }, "geometry": { "type": "MultiPoint", "coordinates": [ [ 16142018.015659949, -4553987.6735080248 ] ] } }
+]
+}

@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "Name": "28 Beach Ave, Elwood VIC 3184, Australia", "Descriptio": null }, "geometry": { "type": "MultiPoint", "coordinates": [ [ 16139796.857860152, -4563171.444432904 ] ] } }
+]
+}

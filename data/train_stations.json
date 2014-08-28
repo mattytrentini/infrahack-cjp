@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "Name": "Balaclava Station", "Descriptio": null }, "geometry": { "type": "Point", "coordinates": [ 16140620.543349391, -4560960.1373711908 ] } },
+{ "type": "Feature", "properties": { "Name": "Prahran Station", "Descriptio": null }, "geometry": { "type": "Point", "coordinates": [ 16140195.876475999, -4558230.7549233222 ] } },
+{ "type": "Feature", "properties": { "Name": "Richmond Station", "Descriptio": null }, "geometry": { "type": "Point", "coordinates": [ 16140179.348401919, -4554580.1047572372 ] } },
+{ "type": "Feature", "properties": { "Name": "Ripponlea Station", "Descriptio": null }, "geometry": { "type": "Point", "coordinates": [ 16140810.919962959, -4561930.1559441211 ] } },
+{ "type": "Feature", "properties": { "Name": "South Yarra Station", "Descriptio": null }, "geometry": { "type": "Point", "coordinates": [ 16140465.840822652, -4556677.0575645929 ] } },
+{ "type": "Feature", "properties": { "Name": "Windsor Station", "Descriptio": null }, "geometry": { "type": "Point", "coordinates": [ 16140437.753786709, -4559113.7787138484 ] } }
+]
+}
