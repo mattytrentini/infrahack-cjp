@@ -64,8 +64,8 @@ function mockSearch(type) {
                 projection: "EPSG:900913",
                 styleMap: new OpenLayers.StyleMap({
                     externalGraphic: "data/train.png",
-                    graphicWidth: 20,
-                    graphicHeight: 20
+                    graphicWidth: 30,
+                    graphicHeight: 30
                 }),
                 strategies: [new OpenLayers.Strategy.Fixed()],
                 protocol: new OpenLayers.Protocol.HTTP({
@@ -80,8 +80,8 @@ function mockSearch(type) {
         projection: "EPSG:900913",
         styleMap: new OpenLayers.StyleMap({
             externalGraphic: "data/flag-green.png",
-            graphicWidth: 20,
-            graphicHeight: 20
+            graphicWidth: 30,
+            graphicHeight: 30
         }),
         strategies: [new OpenLayers.Strategy.Fixed()],
         protocol: new OpenLayers.Protocol.HTTP({
@@ -94,12 +94,39 @@ function mockSearch(type) {
         projection: "EPSG:900913",
         styleMap: new OpenLayers.StyleMap({
             externalGraphic: "data/flag.png",
-            graphicWidth: 20,
-            graphicHeight: 20
+            graphicWidth: 30,
+            graphicHeight: 30
         }),
         strategies: [new OpenLayers.Strategy.Fixed()],
         protocol: new OpenLayers.Protocol.HTTP({
             url: "data/end_address.json",
+            format: geoJsonFormat
+        })
+    }));
+    //Mock showers
+    map.addLayer(new OpenLayers.Layer.Vector("Bike Pod", {
+        projection: "EPSG:900913",
+        styleMap: new OpenLayers.StyleMap({
+            externalGraphic: "data/shower.png",
+            graphicWidth: 30,
+            graphicHeight: 30
+        }),
+        strategies: [new OpenLayers.Strategy.Fixed()],
+        protocol: new OpenLayers.Protocol.HTTP({
+            url: "data/bike_pod.json",
+            format: geoJsonFormat
+        })
+    }));
+    map.addLayer(new OpenLayers.Layer.Vector("Paid Shower Facility", {
+        projection: "EPSG:900913",
+        styleMap: new OpenLayers.StyleMap({
+            externalGraphic: "data/shower.png",
+            graphicWidth: 30,
+            graphicHeight: 30
+        }),
+        strategies: [new OpenLayers.Strategy.Fixed()],
+        protocol: new OpenLayers.Protocol.HTTP({
+            url: "data/paid_shower_facility.json",
             format: geoJsonFormat
         })
     }));

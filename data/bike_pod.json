@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "Name": "Bike Pod", "Descriptio": null }, "geometry": { "type": "Point", "coordinates": [ 16137656.01807115, -4553463.4412841983 ] } }
+]
+}
